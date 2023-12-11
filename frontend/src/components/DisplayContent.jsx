@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
 import { useQuery } from "react-query";
-const URL = "http://localhost:8000";
+// const URL = "http://localhost:8000";
+const URL = "https://employeebackend-uhmz.onrender.com";
 const DisplayContent = () => {
   const { data: allUsers, isLoading } = useQuery({
     queryKey: "employees",
