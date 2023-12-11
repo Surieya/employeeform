@@ -54,20 +54,6 @@ const Form = () => {
       setValidationErr(err);
       return;
     }
-    // try {
-    //   const res = await axios.post(URL + "/api/user", {
-    //     firstName,
-    //     lastName,
-    //     age: parseInt(age),
-    //     dob,
-    //   });
-    //   console.log(res);
-    //   const data = await GetData();
-    //   setAllUsers(data);
-    // } catch (error) {
-    //   console.log(error);
-    // }
-
     postMutation.mutate();
     setAge("");
     setdob("");
