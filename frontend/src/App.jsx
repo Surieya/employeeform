@@ -9,7 +9,7 @@ import Form from "./components/Form";
 
 function App() {
   return (
-    <main className="bg-slate-900 min-h-screen h-auto flex flex-col justify-center items-center gap-3 overscroll-y-auto">
+    <main className="bg-slate-900 min-h-screen h-auto flex flex-col justify-center items-center gap-3 overscroll-y-auto py-5">
       <Form />
       <DisplayContent />
     </main>
