@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgresql://Surieya:6InGvpkl7MqO@ep-floral-resonance-80878605-pooler.ap-southeast-1.aws.neon.tech/employees?sslmode=require
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:3000"
